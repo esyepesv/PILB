@@ -1,0 +1,22 @@
+{
+  "name": "pilb",
+  "version": "1.0.0",
+  "description": "Proxy Inverso + Balanceador de Carga",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esyepesv/PILB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/esyepesv/PILB/issues"
+  },
+  "homepage": "https://github.com/esyepesv/PILB#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
