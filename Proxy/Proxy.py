@@ -1,6 +1,6 @@
 import socket 
 
-host , port = '127.0.0.1' , 8888
+host , port = '127.0.0.1' , 8080
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serversocket.setsockopt(socket.SOL_SOCKET , socket.SO_REUSEADDR , 1)
