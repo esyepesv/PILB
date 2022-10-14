@@ -1,12 +1,15 @@
 const express = require("express");
 var path = require('path');
+const http = require("http");
 const app = express();
 const PORT = 8080;
+
+const host = 'localhost';
 
 
 app.use(express.urlencoded({extended: true}));
 
-app.listen(PORT, () => {
+app.listen(PORT, host, () => {
  console.log('Server is running on port: ' + PORT);
 });
 
