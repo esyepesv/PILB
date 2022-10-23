@@ -1,6 +1,7 @@
 import socket 
+import constants
 
-host , port = 'LOCALHOST' , 8080
+host , port = constants.IP_SERVER , 8081
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 serversocket.setsockopt(socket.SOL_SOCKET , socket.SO_REUSEADDR , 1)
