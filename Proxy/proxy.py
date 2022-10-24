@@ -33,4 +33,3 @@ def send(command_to_send):
 
 if __name__ == '__main__':
     listen()
-
