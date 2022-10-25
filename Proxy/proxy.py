@@ -24,12 +24,10 @@ def listen():
         response = str(data_received.decode(constants.ENCONDING_FORMAT))
         connection.send(response.encode(constants.ENCONDING_FORMAT))
 
-        #serversocket.sendall(response.encode(constants.ENCONDING_FORMAT))
-
 
 def send(command_to_send):
     clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    clientsocket.connect((constants.IP_SERVER2,constants.PORT))
+    clientsocket.connect((constants.IP_SERVERS[2],constants.PORT))
     
     if command_to_send == '':
         print('Please input a valid command...')
