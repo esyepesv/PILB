@@ -21,7 +21,7 @@ En nuestro proyecto implementamos un servidor HTTP, este tiene un archivo llamad
 ![Image text](https://github.com/esyepesv/PILB/blob/main/Image/Diagramas%20Telematica.png)
 
 ## Instrucciones de ejecución
-### Librerías utilizadas en nuestro proyecto:
+### Librerías Utilizadas En Nuestro Proyecto:
 
 os (manejo de archivos)
 
@@ -33,15 +33,18 @@ logging (manejo del archivo .log para registros detallados)
 
 ### Comandos Utilizados
 Python 3.10.8
+
 Ejecutar los servidores: python3 server1.py
+
 ejecutar el proxy: python3 proxy.py
 
 peticiones realizadas a través del navegador: http://(Direccion IP pública del proxy):PUERTO
 
 ## Conclusiones
-en el desarrollo de esta práctica pudimos poner en práctica muchísimos conceptos en cuando a la implementación de un proxy inverso, al manejo de sockets y al envio de peticiones HTTP a través de redes simuladas, pudimos concluir que la utilidad de un proxy para efectos de manejo de peticiones, filtrado, balanceo, y administración de una red es fundamental, además pudimos establece en una infraestructura de trabajo robusta y bastante aplicable a la vida laboral como lo es la plataforma de AWS y las instancias EC2
+En el desarrollo de esta práctica pudimos poner en práctica muchísimos conceptos en cuando a la implementación de un proxy inverso, al manejo de sockets y al envio de peticiones HTTP a través de redes simuladas, pudimos concluir que la utilidad de un proxy para efectos de manejo de peticiones, filtrado, balanceo, y administración de una red es fundamental, además pudimos establece en una infraestructura de trabajo robusta y bastante aplicable a la vida laboral como lo es la plataforma de AWS y las instancias EC2
 
 
 ## Referencias 
 Codigo de laboratorio del profesor Juan Carlos Montoya: (MultiHilos) https://github.com/ST0255/st0255-20222/tree/main/LabSocketsMultiThread
+
 Implementacion de un servidor HTTP con sockets (Alejandro Alvarez) : https://www.youtube.com/watch?v=TTE-ZxN3XkA
