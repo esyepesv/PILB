@@ -18,6 +18,8 @@ En nuestro proyecto encontrara un directorio de proxy donde encontrara el archiv
 ### Servidores
 En nuestro proyecto implementamos un servidor http, este tiene un archivo llamado server.py el cual recibe peticiones que llegan desde el host redirigidas por el proxy, en este caso accediendo al / del proyecto nos entrega un archivo index.html, ademas, este servidor tambien tiene la capacidad de guardar las respuestas que entrega a travez de un archivo en el directorio /cache, esto con el fin evitar hacer consultas redundantes. este cache implementado con una restriccion TTL, la cual establece un tiempo de duracion de la memoria en disco, y permite evitar almanecamiento en cache innecesario este codigo esta desplegado en 3 instancias de EC2 en la nuve de AWS.
 
+![Image text](https://github.com/esyepesv/PILB/blob/main/Image/Diagramas%20Telematica.png)
+
 ## conclusiones
 
 
