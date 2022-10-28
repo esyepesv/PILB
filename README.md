@@ -21,11 +21,15 @@ En nuestro proyecto implementamos un servidor HTTP, este tiene un archivo llamad
 ![Image text](https://github.com/esyepesv/PILB/blob/main/Image/Diagramas%20Telematica.png)
 
 ## Instrucciones de ejecución
-### Librerías utilizadas en nuestro proyecto:  
-os(manejo de archivos)
-time(tiempo real para la caché)
-Sockets(comunicación entre dispositivos)
-logging(manejo del archivo .log para registros detallados)
+### Librerías utilizadas en nuestro proyecto:
+
+os (manejo de archivos)
+
+time (tiempo real para la caché)
+
+Sockets (comunicación entre dispositivos)
+
+logging (manejo del archivo .log para registros detallados)
 
 ### Comandos Utilizados
 Python 3.10.8
