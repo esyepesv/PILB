@@ -1,11 +1,13 @@
 import socket 
 import constants
 import logging
+import time
 
 
 host , port =  constants.IP_SERVER, constants.PORT
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-logging.basicConfig(filename = 'Register.log', level = 'INFO')
+logging.basicConfig(filename = 'Register.log', format="%(asctime)s %(levelname)s %(message)s",  level = 'INFO')
+
 
 
 def main():
@@ -26,9 +28,10 @@ def main():
        
         data_received = send(request, ip_index)
         print(data_received)
-        response = str(data_received.decode(constants.ENCONDING_FORMAT))
-        connection.send(response.encode(constants.ENCONDING_FORMAT))
-
+        response = data_received
+       #response = str(data_received.decode(constants.ENCONDING_FORMAT))
+        #connection.send(response.encode(constants.ENCONDING_FORMAT))
+        connection.send(response)
         #log
         print(response)
         logging.info('respuesta: %r\n enviada por el puerto: %r\n', response, port)
