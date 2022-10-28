@@ -25,6 +25,7 @@ def main():
 
        
         data_received = send(request, ip_index)
+        print(data_received)
         response = str(data_received.decode(constants.ENCONDING_FORMAT))
         connection.send(response.encode(constants.ENCONDING_FORMAT))
 
@@ -40,7 +41,7 @@ def main():
 
 def send(command_to_send, ip_index):
     clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    clientsocket.connect((constants.IP_SERVER,constants.PORT))
+    clientsocket.connect((constants.IP_SERVERS[0],constants.PORT))
     
     if command_to_send == '':
         print('Please input a valid command...')
